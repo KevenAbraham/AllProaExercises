@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            border: 0;
+            margin: 0;
+        }
+
+        .botao{
+            padding: 10px;
+            background-color: aquamarine;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer; 
+        }
+
+        .botao:hover{
+            background-color: cadetblue;
+        }
+
+        .janela_escura{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(60, 50, 50, 80%);
+            visibility: hidden;
+        }
+
+        @keyframes animate{ 
+            from{
+                opacity: 0;
+                width: 0px;
+                height: 0px;
+
+            }
+        
+            to{
+                opacity: 1;
+                width: 500px;
+                height: 500px;
+            }
+        }
+
+        .modal{
+            width: 500px;
+            height: 500px;
+            background-color: rgba(160, 150, 150, 90%);
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-name: animate; 
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            visibility: hidden; 
+        }
+
+        .fechar{
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+     <h1>Testando um Modal na página</h1>
+
+    <div class="botao" onclick="abrir_modal()">Clique aqui para abrir um modal!!!</div>
+
+    <div class="janela_escura">
+        <div class="modal">
+
+            <div class="fechar" onclick="fechar_modal()">X</div>
+
+        </div>
+    </div>
+
+    <script>
+        function abrir_modal() {
+            let modal = document.querySelector(".modal");
+            let janela_escura = document.querySelector(".janela_escura");
+
+            modal.style.visibility = "visible";
+            janela_escura.style.visibility = "visible";
+        }
+
+        function fechar_modal() {
+            let modal = document.querySelector(".modal");
+            let janela_escura = document.querySelector(".janela_escura");
+
+            modal.style.visibility = "hidden";
+            janela_escura.style.visibility = "hidden";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    margin-left: 400px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+}
+
+#camada1, #camada2, #camada3 {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 200px;
+    left: 500px;
+    border: 5px double;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    text-align: justify;
+    visibility: hidden; /*a diferença entre o display:none e o visibility:hidden é que o visibility só oculta e exibe, mas o espaço fisico do componente ainda esta la. o display none tira os componentes fisicamente. o display none é utilziada na responsividade*/
+}
+
+div img {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    float: left;
+}
+
+#camada1 {
+    background-color: aquamarine;
+    color: blue;
+    border-color: rgb(230, 208, 11);
+}
+
+#camada2 {
+    background-color: pink;
+    color: brown;
+    border-color: blue;
+}
+
+#camada3 {
+    background-color: darkorchid;
+    color: lime;
+    border-color: gold;
+}

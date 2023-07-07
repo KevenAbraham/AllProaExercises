@@ -1,0 +1,230 @@
+<!DOCTYPE html> <!--indica a versão do html-->
+<html>
+    <head> <!--SEO -> Search Engine Optimization-->
+        <title>Testando as primeiras tags</title>
+        <style>
+            
+            /**{
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }*/
+            
+            
+            body { /* Com isso, modifica o body da página */
+                background: powderblue;
+                color: darkred;
+                font-size: 20px;
+                font-family: verdana, sans-serif;
+               /* background-image: url("imagens/rick and morty 4.jpg");
+                background-repeat: no-repeat; /*com isso a imagem nao se repetira */
+                /* background-attachment: fixed; /*fixa a imagem no fundo da página */
+                /* background-size: cover; */
+            }
+
+            h1 { /* Isso modifica todos os H1 do nosso site */
+                font-size: 18px;
+                color: red;
+                text-align: center; /* Alinha o elemento da página   */
+                font-weight: normal; /* retirar o negrito do texto */
+                background-color: rgb(223, 226, 43);
+            }
+
+            h3 {
+                background-color: aliceblue;
+                color: coral;
+                text-align: center;
+                font-size: 20pt;
+                text-decoration: underline; /*texto sublinhado*/
+            }
+
+            .diferente {
+                text-decoration: none; /* retira o sublinhado do texto */
+                text-align: right;
+                color: green;
+            }
+
+            .pequena {
+                width: 100px;
+                height: 100px;
+            }
+
+            .media {
+                width: 200px;
+                height: 200px;
+            }
+
+            .grande {
+                width: 500px;
+                height: 500px;
+            }
+
+            h4, h5, h6 {
+                font-size: 1.2em;
+                color: blue;
+                background-color: #ffc900;
+                width: 600px;
+            }
+
+            h4 {
+                color: #f00;
+                border: 5px;
+                border-style: solid;
+                border-color: gray;
+                margin: 50px;
+                padding: 10px;
+            }
+
+            h5 {
+                border: 5px solid #f43;
+                margin-left: 200px;
+            }
+
+            h6 {
+                border-top: 5px double #000;
+                border-bottom: 3px dotted #090;
+                border-left: 4px groove rgb(51, 19, 233);
+                border-right: 3px outset #ff0080;
+                margin: 10px 0px 30px 20px;  /*cada valor é um lado, o primeiro é o top, o segundo é o right, girando no sentido horário */
+            }
+
+            table {
+                width: 500px;
+                height: 350px;
+                border: 3px solid #000;
+                margin: auto;
+                color: #000;
+            }
+
+            th, td {
+                border: 1px solid #000;
+                text-align: center;
+            }
+
+        </style> <!--Inserção de css-->
+        <script></script> <!--inserção de JS-->
+    </head>
+    <body> <!--<body bgcolor="yellow" text="blue"> para usar o css inline-->
+
+        <h1>Inicioda página</h1>
+        <a name="topo" id="topo" />
+        <a href="#fim">Vai para o final da página</a>
+
+        <h1>Testando tag h1</h1> <!--tag de titulo-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum, aliquam maiores esse provident porro amet inventore quibusdam. Delectus a vero culpa nulla eos magni illum quis placeat, at ex.</p> <!--tag paragrafo-->
+        <h2>Testando tag h2</h2>
+
+        <h3>Testando tag h3</h3>
+        <h3 class="diferente">Testando tag h3</h3>
+        <h3>Testando tag h3</h3>
+
+        <h4>Testando tag h4</h4>
+        <h5>Testando tag h5</h5>
+        <h6>Testando tag h6</h6>
+        
+        <img src="imagens/lua.jpg" class="pequena" alt=""/>
+        <img src="imagens/lua.jpg" class="media"/>
+        <img src="imagens/lua.jpg" class="grande"/>
+        <img src="imagens/rick and morty 1.jpg" width="1100px" height="500px">
+        <img src="imagens/rick and morty 3.png" alt="">
+        <img src="imagens/rick and morty 4.jpg" alt="">
+        <img src="imagens/rick and morty 5.jpg" alt="">
+
+        <h1>Testando outra Tag H1</h1>
+
+        <table border="1">
+            <tr>
+                <th colspan="3"> Célula Mesclada em Coluna</th>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Manhã</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>Tarde</td>
+                <td>654321</td>
+            </tr>
+            <tr>
+                <td>Paulo</td>
+                <td>Noite</td>
+                <td>654321</td>
+            </tr>
+
+        </table>
+        <br>
+        <br>
+
+        <ol type="1">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACT</li>
+            <li>MYSQL</li>
+            <li>JAVA</li>
+        </ol>
+        <ol type="A">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACT</li>
+            <li>MYSQL</li>
+            <li>JAVA</li>
+        </ol>
+        <ol type="a">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACT</li>
+            <li>MYSQL</li>
+            <li>JAVA</li>
+        </ol>
+        <ol type="I">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACT</li>
+            <li>MYSQL</li>
+            <li>JAVA</li>
+        </ol>
+        <br>
+        <br>
+        <ul type="disc">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACT</li>
+            <li>MYSQL</li>
+            <li>JAVA</li>
+        </ul>
+        <ul type="square">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACT</li>
+            <li>MYSQL</li>
+            <li>JAVA</li>
+        </ul>
+        <ul type="circle">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACT</li>
+            <li>MYSQL</li>
+            <li>JAVA</li>
+        </ul>
+        <ul style="list-style-type: katakana; color: #f00;"> <!--  -->
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACT</li>
+            <li>MYSQL</li>
+            <li>JAVA</li>
+        </ul>
+
+        <a href="fim" id="fim"></a>
+        <h1>Fim da página</h1>
+        <a href="#topo">Voltar ao topo</a>
+    </body>
+</html>

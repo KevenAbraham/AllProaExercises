@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+/*inicio da programação desktop*/
+body {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    position: relative; /*indicando que dependendo da posição do browser ela aparecerá relativa à área que será mostrada */
+    width: 90%;
+    height: 700px;
+    margin: auto;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    background-color: #000;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+#menu_superior {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #00f;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#menu_superior a {
+    color: #fff;
+    text-decoration: none;
+    width: 16.6%;
+    text-align: center;
+    padding: 10px 0;
+    transition: .75s ease;
+}
+
+#menu_superior a:hover {
+    background-color: #fff;
+    color: #00f;
+    transition: .75s ease;
+}
+
+#menu_lateral {
+    position: relative;
+    width: 20%;
+    height: auto;
+    background-color: #999;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+#menu_lateral a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    transition: .75s;
+}
+
+#menu_lateral a:hover {
+    background-color: #000;
+    border-bottom: 1px solid #f00;
+    transition: .75s;
+}
+
+#centro {
+    position: relative;
+    width: 60%;
+    height: 450px;
+    float: left;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-color: #000;
+    text-align: center;
+    clear: left;
+}
+
+article {
+    position: relative;
+    width: 98%;
+    padding: 1%;
+    background-color: #fff;
+    height: 300px;
+    color: #000;
+}
+
+article h2 {
+    text-align: center;
+    font-weight: normal;
+}
+
+#tablet {
+    width: 98%;
+    height: 180px;
+    margin: auto;
+    background-color: rebeccapurple;
+    background-image: url("imagens/tablet.jpeg");
+    background-size: cover;
+}
+
+article p {
+    width: 98%;
+    height: 100px;
+    margin: 10px auto 0 auto;
+    font-size: 12px;
+    background-color: lightblue;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+#imagens {
+    position: relative;
+    width: 98%;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#imagens div {
+    width: 30%;
+    height: 150px;
+    background-color: #eeea0b;
+}
+
+.caixa1 {
+    background-image: url("imagens/road.jpeg");
+    background-size: cover;
+}
+
+.caixa2 {
+    background-image: url("imagens/paisagem.jpeg");
+    background-size: cover;
+}
+
+.caixa3 {
+    background-image: url("imagens/sol.jpeg");
+    background-size: cover;
+}
+
+aside {
+    position: relative;
+    width: 20%;
+    height: 450px;
+    float: left;
+}
+
+aside img {
+    height: 100%;
+    width: 100%;
+}
+
+/*final da programação desktop*/
+
+/*visualização mobile*/
+@media only screen and (max-width: 480px) {
+    main {
+        margin: auto;
+        width: 98%;
+    }
+
+    #menu_superior {
+        height: 250px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menu_superior a {
+        width: 100%;
+        border-bottom: 3px solid #fff;
+    }
+
+    #menu_lateral, p, #tablet, aside {
+        display: none;
+    }
+
+    #centro {
+        width: 100%;
+        height: 690px;
+    }
+
+    article {
+        height: 40px;
+    }
+
+    #imagens {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    #imagens div {
+        width: 100%;
+        height: 190px;
+        margin-bottom: 4px;
+    }
+}
+
+/*final do mobile*/
+
+/*visualização em tablet*/
+
+@media only screen and (min-width: 481px) {
+    @media only screen and (max-width: 720px) {
+        main {
+            margin: auto;
+            width: 95%;
+        }
+
+        #menu_lateral, aside {
+            display: none; /*faz com que os elementos laterais sumam */
+        }        
+
+        #centro {
+            width: 100%;
+        }
+
+        #menu_superior {
+            display: block;
+            height: 80px;
+        }
+
+        #menu_superior a {
+            width: 33.33%;
+            float: left;
+        }
+    }
+}

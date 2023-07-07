@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>    
+    <script>
+        let farol = prompt("Entre com a cor do farol:");
+
+        switch(farol.toLowerCase()) {
+            case "VERMELHO":
+                alert("Pare o carro!");
+            break;
+            case "AMARELO":
+                alert("Reduza a velocidade");
+            break;
+            case "VERDE":
+                alert("Prossiga!");
+            break;
+            default:
+                alert("Cor inválida!");
+        }
+    </script>
+</body>
+</html>

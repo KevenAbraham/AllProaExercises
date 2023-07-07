@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <label for="">Entre com seu nome:</label>
+            <input type="text" name="nome" maxlength="50" size="50" placeholder="Digite seu nome aqui">
+
+            <br><br>
+
+            <label for="">Entre com seu e-mail</label>
+            <input type="email" name="mail" maxlength="30" size="30" placeholder="Digite o seu e-mail">
+
+            <br><br>
+
+            <label for="">Entre com sua senha</label>
+            <input type="password" name="senha" maxlength="10" size="10">
+
+            <br><br>
+
+            <label for="">Você utiliza o nosso site frequentemente?</label>
+            <input type="radio" name="resp" value="sim" tabindex="1"> Sim 
+            <!-- tabindex serve para locomover por meio do tab  -->
+            <input type="radio" name="resp" value="não"> Não
+
+            <br><br>
+
+            <label for="">Qual browser você costuma usar para acesso ao site?</label>
+            <input type="checkbox" name="opcao1" value="Firefox"> Firefox
+            <input type="checkbox" name="opcao1" value="Chrome"> Chrome
+            <input type="checkbox" name="opcao1" value="Internet Explorer"> Internet Explorer
+            <input type="checkbox" name="opcao1" value="Safari"> Safari
+            <input type="checkbox" name="opcao1" value="Opera GX"> Opera GX
+
+            <br><br>
+
+            <label for="">Selecione uma área de atuação</label>
+            <select name="" id="">
+                <option>Marketing</option>
+                <option>Comercial</option>
+                <option>Vendas</option>
+                <option>WEB</option>
+                <option>Administração</option>
+            </select>
+
+            <br><br>
+
+            <label for="">Deixe aqui o seu comentário</label> <br>
+            <textarea cols="20" rows="10" placeholder="Comente aqui:"></textarea>
+
+            <br><br>
+
+            <label for="">Entre com um número:</label>
+            <input type="number" name="num" min="10" max="20">
+
+            <br><br>
+
+            <label for="">Selecione uma data</label>
+            <input type="date" name="data">
+
+            <br><br>
+
+            <progress value="30" max="100"></progress>
+
+            <br><br>
+
+            <meter min="0" max="100" low="40" high="90" optimum="100" value="95"></meter>
+
+            <br><br>
+
+            <input type="search" url="#">
+
+            <br><br>
+
+            <label for="">Escolha a sua cor</label>
+            <input type="color" name="" id="">
+
+            <br><br>
+
+            <input type="button" value="Enviar">
+            <input type="reset" value="Limpar campos">
+        </fieldset>
+    </form>
+</body>
+</html>

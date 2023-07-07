@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <center><h1>Cálculo de IMC</h1></center>
+
+    <script>
+        let peso = parseFloat(prompt("Informe o seu peso:"));
+        let altura = parseFloat(prompt("Informe a sua altura:"));
+
+        let imc = peso / (Math.pow(altura, 2)); // Potenciação
+
+        document.write("<center>IMC de: " + imc.toFixed(2) + "</center>"); // numero de casas decimais
+        document.write("<br>");
+
+        if (imc < 18.5) {
+            document.write("<center>Você está abaixo do peso!</center>");
+        } else if (imc <= 24.9) {
+            document.write("<center>Você está com o peso normal!</center>");
+        } else if (imc <= 29.9) {
+            document.write("<center>Você está com sobrepeso!</center>");
+        } else if (imc <= 34.9) {
+            document.write("<center>Você está com obesidade grau I!</center>");
+        } else if (imc <= 39.9) {
+            document.write("<center>VocÊ está com obesidade grau II!</center>");
+        } else {
+            document.write("<center>Você está com obesidade mórbida!</center>");
+        }
+    </script>
+</body>
+</html>

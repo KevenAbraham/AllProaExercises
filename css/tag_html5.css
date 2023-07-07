@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+main {
+    position: relative;
+    width: 90%;
+    height: auto;
+    background-color: darkgrey;
+    margin: auto;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#esquerda {
+    position: relative;
+    width: 30%;
+    height: 400px;
+    background-color: rgb(127, 255, 159);
+    float: left;
+}
+
+#direita { 
+    position: relative;
+    width: 70%;
+    height: 400px;
+    background-color: rgb(255, 127, 127);
+    float: left;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(147, 20, 185);
+    text-align: center;
+    color: #fff;
+    clear: left;
+    padding: 30px 0;
+}
+
+nav, aside {
+    position: relative;
+    width: 90%;
+    height: 45%;
+    background-color: #fff;
+    margin: 4% auto;
+}
+
+article {
+    position: relative;
+    width: 98%;
+    height: 98%;
+    background-color: #fff;
+    margin: 0.5% auto;
+}
+
+article h1 {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+p {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    background-color: gold;
+    margin-top: 0.5%;
+}
+
+div {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background-color: mediumseagreen;
+    margin-top: 0.5%;
+}
+
+a {
+    width: 100%;
+    color: #fff;
+    background-color: blue;
+    text-decoration: none; /*retira o sublinhado do texto */
+    padding: 0.5%;
+    display: block; /*usado para quando o elemento fica um do lado outro mas queremos ele um embaixo do outro */
+    margin: 0.5%;
+    transition: 0.5s ease;
+}
+
+a:hover {
+    background-color: #000;
+    width: 70%;
+    transition: 0.5s ease;
+    text-align: center;
+}

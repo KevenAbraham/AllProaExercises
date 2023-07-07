@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Permissões</title>
+</head>
+<body>   
+    <script>
+            let cargo = prompt("Entre com sua senha de acesso");
+
+            switch(cargo) {
+                case "d2023":
+                    document.write("Seu acesso é diretoria!");
+                break
+                case "g2023":
+                    document.write("Seu cargo é gerência!");
+                break;
+                case "s2023":
+                    document.write("Seu acesso é de supervisão");
+                break;
+                case "a2023":
+                    document.write("Seu acesso é de Assistente");
+                break;
+                case "e2023":
+                    document.write("Seu acesso é de estagiário!");
+                break;
+                default:
+                    document.write("Senha inválida!");
+            }
+    </script>
+</body>
+</html>

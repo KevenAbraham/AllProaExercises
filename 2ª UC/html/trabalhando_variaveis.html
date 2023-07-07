@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Testando variáveis</h1>
+
+    <script>
+        // var numero = prompt("Entre com um número qualquer: "); //instanciar uma variável é atribuir o valor para a mesma
+        // //o prompt serve para o usuário insira o valor desejado
+        let nome = prompt("Entre com um nome qualquer: ");
+        
+        // document.write("O número é: " + numero + ", " + nome);
+        
+        let idade = parseInt(prompt("Insira a sua idade:"));
+        let peso = parseFloat(prompt("Insira o peso:"));
+        let altura = parseFloat(prompt("Insira a altura:"));
+        let endereco = prompt("Insira o Endereço:");
+        let estadoCivil = prompt("Insira o estado civil:");
+        let genero = prompt("Insira o gênero:");
+        let nacionalidade = prompt("Insira a sua nacionalidade:");
+
+        //let permite trabalhar em funções públicas ou privadas
+
+        document.write("Olá, " + nome + "!");
+        document.write("<br>");
+        document.write("Você tem " + idade + " anos e pesa cerca de " + peso + "kg.");
+        document.write("<br>");
+        document.write("Você mora na rua " + endereco + " e tem uma altura de " + altura + "m e é " + estadoCivil + ".");
+        document.write("<br>");
+        document.write("Você é do gênero " + genero + " e nasceu no(a) " + nacionalidade + ".");
+    </script>
+</body>
+</html>

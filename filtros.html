@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            transition: 0.75s ease;
+        }
+
+        img:hover {
+            cursor: pointer;
+            box-shadow: 5px 5px 5px #007;
+            filter: none;
+            transition: 0.75s ease;
+        }
+
+        .greyscale {
+            filter: grayscale(100%);
+        }
+
+        .saturate {
+            filter: saturate(5);
+        }
+
+        .sepia {
+            filter: sepia(100%);
+        }
+
+        .invert {
+            filter: invert(100%);
+        }
+
+        .blur {
+            filter: blur(5px);
+        }
+
+        .opacity {
+            filter: opacity(30%);
+        }
+
+        .brightness {
+            filter: brightness(100%);
+            
+        }
+
+        .contrast {
+            filter: contrast(100%);
+        }
+
+        #rollover {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 200px;
+            background-image: url(imagens/lua.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 0.25s;
+        }
+
+        #rollover {
+            background-image: url(imagens/rickmorty.jpg);
+            transition: 0.25s;
+        }
+
+        .liga-desliga {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            height: 300px;
+            width: 300px;
+            background-image: url(imagens/botao_off.png);
+            background-size: cover;
+            transition: .25s ease;
+        }
+
+        .liga-desliga:hover {
+            background: url(imagens/botao_on.jpg);
+            background-size: cover;
+            transition: .25s ease;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="imagens/botao_on.jpg" class="greyscale">
+        <img src="imagens/rick and morty 1.jpg" class="saturate">
+        <img src="imagens/rick and morty 2.jpeg" class="sepia">
+        <img src="imagens/rick and morty 3.png" class="invert">
+    </div>
+    <div class="container">
+        <img src="imagens/rickmorty.jpg" class="blur">
+        <img src="imagens/rickmorty2.jpg" class="opacity">
+        <img src="imagens/rickmorty3.jpg" class="brightness">
+        <img src="imagens/rickmorty4.jpg" class="contrast">
+    </div>
+
+    <br><br>
+
+    <div id="rollover"></div>
+
+    <br><br>
+
+    <div class="liga-desliga"></div>
+
+    <div class="on_off"></div>
+</body>
+</html>

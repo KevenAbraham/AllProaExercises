@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's</title>
+</head>
+<body>
+    <center><h1>Informações do pedido</h1></center>
+    <hr>
+
+    <script>
+        let combo = parseInt(prompt("Insira o número do seu combo. [1, 2, 3, 4, 5]"));
+
+        switch(combo) {
+            case 1:
+                let res = confirm("O seu combo é um: \nX-tudo\nRefrigerante\nBatata-frita");
+                if (res == true) {
+                    document.write("<center>Pedido confirmado!" + "<br>X-tudo | Refrigerante | Batata-frita<br>R$25,00</center>");
+                } else {
+                    location.reload();
+                }
+            break;
+            case 2:
+                let res1 = confirm("O seu combo é um: \nX-salada\nSuco\nBatata-frita");
+                if (res1 == true) {
+                    document.write("<center>Pedido confirmado!" + "<br>X-salada | Suco | Batata-frita<br>R$21,00</center>");
+                } else {
+                    location.reload();
+                }
+            break;
+            case 3:
+                let res2 = confirm("O seu combo é um: \nX-burguer \nRefrigetante \nBatata-frita");
+                if (res2 == true) {
+                    document.write("<center>Pedido confirmado!" + "<br>X-burguer | Refrigerante | Batata-frita<br>R$21,00</center>");
+                } else {
+                    location.reload();
+                }
+            break;
+            case 4:
+                let res3 = confirm("O seu combo é um: \nX-bacon \nRefrigerante \nBatata-frita");
+                if (res3 == true) {
+                    document.write("<center>Pedido confirmado!" + "<br>X-bacon | Refrigerante | Batata-frita<br>R$25,00</center>");
+                } else {
+                    location.reload();
+                }
+            break;
+            case 5:
+                let res4 = confirm("O seu combo é um: \nX-frango \nRefrigerante \nBatata-frita");
+                if (res4 == true) {
+                    document.write("<center>Pedido confirmado!" + "<br>X-frango | Refrigerante | Batata-frita<br>R$23,00</center>");
+                } else {
+                    location.reload();
+                }
+            break;
+            default:
+                alert("Insira um valor correto!");
+                location.reload();
+        }
+    </script>
+
+</body>
+</html>
